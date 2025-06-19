@@ -1,0 +1,394 @@
+/* Additional CSS for Bonuses Inner Page */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #6e2feb 0%, #5d1cd9 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 30px;
+    margin: 0;
+}
+
+.page-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.page-intro {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+/* Bonus Detail Sections */
+.bonus-detail-section {
+    margin: 40px 0;
+}
+
+.bonus-detail-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.bonus-card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(110, 47, 235, 0.05) 0%, rgba(240, 240, 240, 0.3) 100%);
+}
+
+.bonus-detail-image {
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.bonus-highlight h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.bonus-description-full {
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.bonus-description-full p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+/* Inline Steps */
+.bonus-steps-inline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.step-inline {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: rgba(110, 47, 235, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.step-number-small {
+    background-color: var(--primary-color);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.step-inline span:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Bonus Terms Table */
+.bonus-terms-table {
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.bonus-terms-table h4 {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.terms-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.terms-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: top;
+}
+
+.terms-table td:first-child {
+    background-color: rgba(110, 47, 235, 0.05);
+    font-weight: 600;
+    width: 30%;
+    color: var(--dark-color);
+}
+
+.terms-table td:last-child {
+    color: var(--text-color);
+}
+
+.terms-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Bonus CTA */
+.bonus-cta {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.3);
+}
+
+/* Other Promotions Section */
+.other-promotions-section {
+    background-color: #fff;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.promotions-grid-extended {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.promo-card-extended {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-card-extended:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.promo-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.promo-card-extended .promo-image {
+    height: 600px;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.promo-card-extended:hover .promo-image img {
+    transform: scale(1.05);
+}
+
+.promo-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.promo-offer {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.promo-content > p {
+    margin-bottom: 15px;
+    color: #666;
+    flex: 1;
+}
+
+.promo-highlights {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.promo-highlights li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.promo-highlights li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Promotions CTA */
+.promotions-cta {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(110, 47, 235, 0.05) 0%, rgba(240, 240, 240, 0.3) 100%);
+    border-radius: var(--border-radius);
+    margin-top: 40px;
+}
+
+.promotions-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+/* Terms Notice */
+.terms-notice {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.terms-notice h3 {
+    text-align: center;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.terms-notice p {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.responsible-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.text-link {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.text-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 20px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-intro {
+        font-size: 1rem;
+    }
+    
+    .bonus-card-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .bonus-detail-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
+    }
+    
+    .bonus-description-full,
+    .bonus-terms-table,
+    .bonus-cta {
+        padding: 20px;
+    }
+    
+    .bonus-steps-inline {
+        grid-template-columns: 1fr;
+    }
+    
+    .terms-table td:first-child {
+        width: 40%;
+    }
+    
+    .terms-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .promotions-grid-extended {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .responsible-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    .bonus-highlight h3 {
+        font-size: 1.4rem;
+    }
+    
+    .terms-table td:first-child {
+        width: 45%;
+    }
+    
+    .promo-card-extended {
+        margin: 0 10px;
+    }
+    
+    .step-inline {
+        padding: 10px 12px;
+    }
+    
+    .step-inline span:last-child {
+        font-size: 0.85rem;
+    }
+}
